@@ -1,10 +1,16 @@
-var key = document.querySelectorAll('#llave');
-var bf = new Blowfish(key);
+function desencriptar (){
+	var key = document.querySelectorAll('#llave')[0].value;
+	var mensaje = document.querySelectorAll('.blowfish')[0].id;
 
-// Encrypt and encode to base64
-var encrypted = bf.base64Encode(bf.encrypt("secret message"));
-console.log(encrypted);
+	console.log(key);
+	console.log(mensaje);
 
-// Decrypt
-var encrypted = bf.base64Decode(encrypted);
-var decrypted = bf.decrypt(encrypted);
+
+	var bf = new Blowfish(key);
+
+	var encrypted = bf.base64Decode(mensaje);
+	var decrypted = bf.decrypt(encrypted);
+
+
+	document.querySelectorAll('.blowfish')[0].innerHTML="mensaje: "+decrypted;
+}

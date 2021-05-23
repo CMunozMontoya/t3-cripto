@@ -25,7 +25,7 @@ mensaje_cifrado = cipher.encrypt_block(mensaje)
 data = base64.b64encode(mensaje_cifrado)
 #print(data)
 
-texto_oculto = "<div class='blowfish' id='" + str(data)[2:] + "'></div>"
+texto_oculto = "<div class='blowfish' id=" + str(data)[1:] + "></div>"
 
 #escribir html----------
 archivo.write("<!DOCTYPE html>\n<html>\n<body>\n\n")

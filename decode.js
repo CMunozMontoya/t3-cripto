@@ -1,11 +1,11 @@
-function desencriptar (){
-	var key = document.querySelectorAll('#llave')[0].value;
-	var mensaje = document.querySelectorAll('.blowfish')[0].id;
+function desencriptar (key, mensaje, mode){
+	//var key = document.querySelectorAll('#llave')[0].value;
+	//var mensaje = document.querySelectorAll('.blowfish')[0].id;
 
 	console.log(key);
 	console.log(mensaje);
 
-	var mode = "ecb"
+	//var mode = "ecb"
 
 	var bf = new Blowfish(key,mode);
 
@@ -13,5 +13,5 @@ function desencriptar (){
 	var decrypted = bf.decrypt(encrypted);
 
 
-	document.querySelectorAll('.blowfish')[0].innerHTML="mensaje: "+decrypted;
+	document.querySelectorAll('.blowfish')[0].innerHTML="mensaje: " + decrypted;
 }

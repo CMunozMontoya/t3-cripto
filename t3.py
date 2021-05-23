@@ -30,11 +30,12 @@ texto_oculto = "<div class='blowfish' id=" + str(data)[1:] + "></div>"
 archivo.write("<!DOCTYPE html>\n<html>\n")
 archivo.write("<head> <link rel='stylesheet' type='text/css' href='estilo.css' />")
 archivo.write("<script type='text/javascript' src='Blowfish.js' ></script>")
+archivo.write("<script type='text/javascript' src='decode.js' ></script>")
 #archivo.write("<script type='text/javascript' src='decode.js' />")
 archivo.write("</head><body>\n\n")
 archivo.write("<p>Este sitio contiene un mensaje secreto</p>")
 archivo.write(texto_oculto)
-archivo.write("<input type='text' id = 'llave'/>")
+#archivo.write("<input type='text' id = 'llave'/>")
 #archivo.write("<button type='button' onclick='desencriptar();'> desencriptar </button>")
 archivo.write("\n</body>\n</html>")
 

@@ -5,8 +5,9 @@ function desencriptar (){
 	console.log(key);
 	console.log(mensaje);
 
+	var mode = "ecb"
 
-	var bf = new Blowfish(key);
+	var bf = new Blowfish(key,mode);
 
 	var encrypted = bf.base64Decode(mensaje);
 	var decrypted = bf.decrypt(encrypted);

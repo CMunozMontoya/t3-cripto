@@ -1,6 +1,6 @@
 function desencriptar (key, mensaje, mode){
-	var key = document.querySelectorAll('#llave')[0].value;
-	var mensaje = document.querySelectorAll('.blowfish')[0].id;
+	//var key = document.querySelectorAll('#llave')[0].value;
+	//var mensaje = document.querySelectorAll('.blowfish')[0].id;
 
 	console.log(key);
 	console.log(mensaje);

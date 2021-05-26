@@ -1,10 +1,10 @@
-function desencriptar (key, mensaje){
+function desencriptar (){
 	
 	var key = document.querySelectorAll('#llave')[0].value;
-	//var mensaje = document.querySelectorAll('.blowfish')[0].id;
+	var mensaje = document.querySelectorAll('.blowfish')[0].id;
 
-	console.log(key);
-	console.log(mensaje);
+	//console.log(key);
+	//console.log(mensaje);
 
 	var mode = "ecb"
 
